@@ -124,6 +124,7 @@ Print the first rows and the total number of observations. Do you understand all
 <summary>Clue here</summary>
 You may use the functions `pl.read_parquet()` and `len()`, and the method `.head()`.
 </details>
+
 ```{python}
 #| label: load-data
 #| code-fold: true
@@ -138,6 +139,7 @@ print(df.head())
 print(f"Total rows: {len(df)}")
 ```
 
+
 ## Question 3 — Count unique NAF codes
 
 How many unique NAF codes are present in the dataset? This number will define the number of output classes the model must predict.
@@ -146,6 +148,7 @@ How many unique NAF codes are present in the dataset? This number will define th
 <summary>Clue here</summary>
 The `.n_unique()` method in Polars may help you computing the number of classes.
 </details>
+
 ```{python}
 #| label: unique-codes
 #| code-fold: true
@@ -234,7 +237,7 @@ print(f"Example: '{train['label'][0]}' → {encoder.inverse_transform(y_train[:1
 
 :::
 
-# Tokenizer
+# Applying a tokenizer
 
 Neural networks cannot process raw text directly — they work with numbers. A **tokenizer**
 is the component that bridges this gap: it splits a text into small units called **tokens**
