@@ -152,7 +152,7 @@ print(f"Total rows: {len(df)}")
 
 ## Question 3 — Count unique NACE codes
 
-How many unique NACE codes are present in the dataset? This number will define the number of output classes the model must predict.
+How many unique NACE codes are present in the dataset? Store this number in a variable called `n_classes`. This number will define the number of output classes the model must predict.
 
 <details>
 <summary>Clue here</summary>
