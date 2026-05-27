@@ -4,7 +4,7 @@ import duckdb
 from dotenv import load_dotenv
 from openai import OpenAI
 from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, VectorParams, PointStruct, Document
+from qdrant_client.models import Distance, VectorParams, PointStruct
 from dataclasses import dataclass, field
 from typing import Optional, List
 from uuid import uuid5, NAMESPACE_DNS
